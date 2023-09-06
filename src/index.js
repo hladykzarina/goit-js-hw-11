@@ -1,9 +1,7 @@
 import axios from 'axios';
-import { Notify } from 'notiflix/build/notiflix-notify-aio';
 import SimpleLightbox from 'simplelightbox';
-import SimpleLightbox from 'simplelightbox/dist/simple-lightbox.min.css';
-pixabay.defaults.headers.common['x-api-key'] =
-  '39231983-3a5a24849d135b109e286581a';
+import 'simplelightbox/dist/simple-lightbox.min.css';
+import Notiflix from 'notiflix';
 
 Notiflix.Notify.init({
   width: '480px',
@@ -25,7 +23,7 @@ refs.loadEl.classList.add('hidden');
 refs.formEl.addEventListener('submit', handlerImg);
 const BASE_URL = 'https://pixabay.com/';
 const END_POINT = 'api/';
-const API_KEY = 'key=39106428-5c7ff9c9615a8fde7969ec155';
+const API_KEY = 'key=39231983-3a5a24849d135b109e286581a';
 let page;
 let searchImage;
 function handlerImg(evt) {
