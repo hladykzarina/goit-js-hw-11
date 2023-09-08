@@ -5,25 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Page title</title>
     <link rel="stylesheet" href="./sass/index.scss" />
-    <script type="module" src="./index.js"></script>
     <link rel="stylesheet" href="./common.css" />
+    <script type="module" src="./index.js"></script>
   </head>
   <body>
     <header class="header">
-      <form class="search-form" id="search-form">
-        <input
-          type="text"
-          name="searchQuery"
-          autocomplete="off"
-          placeholder="Search images..."
-        />
-        <button type="submit">Search</button>
-      </form>
-
-      <div class="photo-card">
-        <div class="info"></div>
-        <div class="info-desc"><p class="info-item"></p></div>
+      <div class="header-container container">
+        <form class="search-form" id="search-form">
+          <input
+            class="input"
+            type="text"
+            name="searchQuery"
+            autocomplete="off"
+            placeholder="Search images..."
+          />
+          <button class="button-search" type="submit">Search</button>
+        </form>
       </div>
     </header>
+    <main>
+      <div class="wrapper">
+        <div class="gallery">
+          <!-- Картки зображень -->
+        </div>
+      </div>
+      <button type="button" class="load-more hidden">Load more</button>
+    </main>
   </body>
 </html>
